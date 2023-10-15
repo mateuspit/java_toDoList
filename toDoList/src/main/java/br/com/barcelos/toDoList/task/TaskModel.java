@@ -26,6 +26,7 @@ public class TaskModel {
     private UUID userId;
     @CreationTimestamp
     private LocalDateTime createdAt;
+    private String priority;
 
     public void setId(UUID id) {
         this.id = id;
@@ -81,5 +82,13 @@ public class TaskModel {
 
     public LocalDateTime getCreatedAt() {
         return this.createdAt;
+    }
+
+    public void setPriority(String priority) {
+        this.priority = priority;
+    }
+
+    public String getPriority() {
+        return this.priority;
     }
 }
