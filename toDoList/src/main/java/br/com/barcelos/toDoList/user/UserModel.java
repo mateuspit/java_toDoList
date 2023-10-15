@@ -1,5 +1,6 @@
 package br.com.barcelos.toDoList.user;
 
+//Podemos usar lib como o lombok para criar getters e setters automaticamente e mais limpo
 public class UserModel {
     private String username;
     private String name;
