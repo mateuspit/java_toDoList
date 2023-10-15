@@ -24,6 +24,7 @@ public class UserModel {
     private String password;
     @CreationTimestamp
     private LocalDateTime createdAt;
+    private String priority;
 
     public void setId(UUID UUID) {
         this.id = UUID;
@@ -55,5 +56,21 @@ public class UserModel {
 
     public String getPassword() {
         return this.password;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return this.createdAt;
+    }
+
+    public void setPriority(String priority) {
+        this.priority = priority;
+    }
+
+    public String getPriority() {
+        return this.priority;
     }
 }
