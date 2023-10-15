@@ -16,9 +16,11 @@ public class UserModel {
     @Id
     @GeneratedValue(generator = "UUDI")
     private UUID id;
-    @Column(name = "username_column") // Apenas mostrando a possibilidade de mudar o nome da coluna
+    @Column(name = "username_column", unique = true) // Apenas mostrando a possibilidade de mudar o nome da coluna
     private String username;
+    @Column(nullable = false)
     private String name;
+    @Column(nullable = false)
     private String password;
     @CreationTimestamp
     private LocalDateTime createdAt;

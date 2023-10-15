@@ -1,6 +1,8 @@
 package br.com.barcelos.toDoList.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,10 +16,15 @@ public class UserController {
     private IUserRepository userRepository;
 
     @PostMapping("/create")
-    public UserModel createUser(@RequestBody UserModel userModel) {
-        // var newUser = this.userRepository.save(userModel);
+    public ResponseEntity createUser(@RequestBody UserModel userModel) {
+        var user = this.userRepository.findByUsername(userModel.getUsername());
+
+        if (user != null) {
+            System.out.println("Usuário já existe!");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Usuário já existe!");
+        }
         var newUser = this.userRepository.save(userModel);
-        return newUser;
+        return ResponseEntity.status(HttpStatus.CREATED).body(newUser);
     }
 
 }
