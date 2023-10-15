@@ -1,6 +1,7 @@
 package br.com.barcelos.toDoList.user;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
 
@@ -14,7 +15,7 @@ import jakarta.persistence.Id;
 public class UserModel {
     @Id
     @GeneratedValue(generator = "UUDI")
-    private String UUID;
+    private UUID id;
     @Column(name = "username_column") // Apenas mostrando a possibilidade de mudar o nome da coluna
     private String username;
     private String name;
@@ -22,12 +23,12 @@ public class UserModel {
     @CreationTimestamp
     private LocalDateTime createdAt;
 
-    public void setUUID(String UUID) {
-        this.UUID = UUID;
+    public void setId(UUID UUID) {
+        this.id = UUID;
     }
 
-    public String getUUID() {
-        return this.UUID;
+    public UUID getId() {
+        return this.id;
     }
 
     public void setUsername(String username) {
