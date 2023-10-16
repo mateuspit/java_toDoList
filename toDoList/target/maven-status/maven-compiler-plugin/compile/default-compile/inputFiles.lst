@@ -1,5 +1,6 @@
 /home/barcelos/RocketSeat/JavaMiniCurso/toDoList/src/main/java/br/com/barcelos/toDoList/user/UserModel.java
 /home/barcelos/RocketSeat/JavaMiniCurso/toDoList/src/main/java/br/com/barcelos/toDoList/user/UserController.java
+/home/barcelos/RocketSeat/JavaMiniCurso/toDoList/src/main/java/br/com/barcelos/toDoList/task/exceptions/TaskExceptions.java
 /home/barcelos/RocketSeat/JavaMiniCurso/toDoList/src/main/java/br/com/barcelos/toDoList/user/IUserRepository.java
 /home/barcelos/RocketSeat/JavaMiniCurso/toDoList/src/main/java/br/com/barcelos/toDoList/task/ITaskRepository.java
 /home/barcelos/RocketSeat/JavaMiniCurso/toDoList/src/main/java/br/com/barcelos/toDoList/task/TaskModel.java
