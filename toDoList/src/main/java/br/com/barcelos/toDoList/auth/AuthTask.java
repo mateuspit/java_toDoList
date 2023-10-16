@@ -45,6 +45,7 @@ public class AuthTask extends OncePerRequestFilter {
                 if (!correctPassword.verified) {
                     response.sendError(401, "Senha incorreta!");
                 }
+                request.setAttribute("userId", user.getId());
                 filterChain.doFilter(request, response);
             }
         } else {
