@@ -1,0 +1,11 @@
+br/com/barcelos/toDoList/task/TaskController.class
+br/com/barcelos/toDoList/health/HealthController.class
+br/com/barcelos/toDoList/task/exceptions/TaskExceptions.class
+br/com/barcelos/toDoList/user/UserModel.class
+br/com/barcelos/toDoList/user/UserController.class
+br/com/barcelos/toDoList/utils/Utils.class
+br/com/barcelos/toDoList/task/TaskModel.class
+br/com/barcelos/toDoList/auth/AuthTask.class
+br/com/barcelos/toDoList/ToDoListApplication.class
+br/com/barcelos/toDoList/user/IUserRepository.class
+br/com/barcelos/toDoList/task/ITaskRepository.class
